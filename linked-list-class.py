@@ -1,5 +1,5 @@
 class Linked_List:
-    def __init__(self, *args):
+    def __init__(self, *arg):
         self.nodes = set()
         if len(arg)==0:return
         self.head = self.Node(arg[0])
@@ -20,7 +20,7 @@ class Linked_List:
         return self
 
     def __next__(self):
-        if self.currrent!=None:
+        if self.current!=None:
             result = self.current.value
             self.current = self.current.next_node
             return result
@@ -39,7 +39,7 @@ class Linked_List:
     #def insert_before
     #def delete
 
-    clase Node:
+    class Node:
         def __init__(self, value, next_node=None):
             self.value = value
             self.next_node = next_node
